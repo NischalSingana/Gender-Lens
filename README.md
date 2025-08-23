@@ -1,41 +1,74 @@
-# GenderLens
+# 🌐 GenderLens – Inclusive Language Detector
 
-Detect gender bias in text and get suggestions for more inclusive language. This project provides a React + TypeScript web app with shadcn-ui and Tailwind CSS.
+**GenderLens** helps detect gender-biased language in text and suggests inclusive alternatives.  
+It is a React + TypeScript web application styled with **Tailwind CSS** and **shadcn-ui** components.
 
-## Tech Stack
+Live site: [nischalsingana.tech](https://nischalsingana.tech)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## Getting Started
+## ✨ Features
 
-Prerequisites: Node.js (v18+) and npm.
+- 📝 **Bias Detection** – Scans text for masculine-coded, feminine-coded, exclusionary, and stereotypical terms.  
+- 💡 **Smart Suggestions** – Provides inclusive alternatives while retaining original meaning.  
+- 🎨 **Modern UI** – Built with **shadcn-ui** and **Tailwind CSS** for a clean, responsive design.  
+- ⚡ **Fast Frontend** – Powered by **React + Vite + TypeScript**.  
+- ☁️ **Easy Deployment** – Works seamlessly on Vercel, Netlify, or GitHub Pages.  
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)  
+- **Language**: [TypeScript](https://www.typescriptlang.org/)  
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [shadcn-ui](https://ui.shadcn.com/)  
+- **Hosting**: [Vercel](https://vercel.com/)  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) v18+
+- npm (comes with Node)
+
+### Installation
 
 ```sh
+# Clone the repository
+git clone https://github.com/NischalSingana/Gender-Lens.git
+cd Gender-Lens
+
 # Install dependencies
 npm install
 
-# Start the development server
+# Start development server
 npm run dev
 
-# Build for production
-npm run build
+🤝 Contributing
 
-# Preview the production build
-npm run preview
-```
+Contributions are welcome! To contribute:
 
-## Project Structure
+Fork the repo
 
-- `src/components` – UI and feature components
-- `src/pages` – Route pages
-- `src/lib` – Utilities and bias detection logic
-- `public` – Static assets
+Create a feature branch (git checkout -b feature/awesome-idea)
 
-## Deployment
+Commit changes (git commit -m 'Add awesome idea')
 
-You can deploy the built `dist` directory to any static hosting provider (e.g., Netlify, Vercel, GitHub Pages).
+Push branch (git push origin feature/awesome-idea)
 
+Open a Pull Request 🎉
+
+🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+Fork the repo
+
+Create a feature branch (git checkout -b feature/awesome-idea)
+
+Commit changes (git commit -m 'Add awesome idea')
+
+Push branch (git push origin feature/awesome-idea)
+
+Open a Pull Request 🎉
