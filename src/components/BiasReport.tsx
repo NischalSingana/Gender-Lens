@@ -28,7 +28,6 @@ export const BiasReport: React.FC<BiasReportProps> = ({ text, analysis, onClose 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!reportText.trim() || !context || !biasType) {
       toast({
         title: "Missing Information",
@@ -37,29 +36,35 @@ export const BiasReport: React.FC<BiasReportProps> = ({ text, analysis, onClose 
       });
       return;
     }
-
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Here you would typically send the report to your backend
-    console.log('Report submitted:', {
-      text: reportText,
-      context,
-      biasType,
-      sourceUrl,
-      isAnonymous,
-      detectedBias: analysis?.matches || []
-    });
-    
-    toast({
-      title: "Report Submitted",
-      description: "Thank you for helping improve bias detection!",
-    });
-    
-    setIsSubmitting(false);
-    onClose();
+    try {
+      const res = await fetch("/api/report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: reportText,
+          context,
+          biasType,
+          sourceUrl,
+          anonymous: isAnonymous,
+          detectedBias: analysis?.matches || []
+        })
+      });
+      if (!res.ok) throw new Error("Failed to submit report");
+      toast({
+        title: "Report Submitted",
+        description: "Thank you for helping improve bias detection!",
+      });
+      setIsSubmitting(false);
+      onClose();
+    } catch (err) {
+      setIsSubmitting(false);
+      toast({
+        title: "Submission Failed",
+        description: "Could not submit report. Please try again later.",
+        variant: "destructive"
+      });
+    }
   };
 
   return (
