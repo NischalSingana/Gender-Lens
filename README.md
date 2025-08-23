@@ -25,6 +25,19 @@ Live site: [nischalsingana.tech](https://nischalsingana.tech)
 - **Hosting**: [Vercel](https://vercel.com/)  
 
 ---
+🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+Fork the repo
+
+Create a feature branch (git checkout -b feature/awesome-idea)
+
+Commit changes (git commit -m 'Add awesome idea')
+
+Push branch (git push origin feature/awesome-idea)
+
+Open a Pull Request 🎉
 
 ## 🚀 Getting Started
 
@@ -45,30 +58,5 @@ npm install
 # Start development server
 npm run dev
 
-🤝 Contributing
 
-Contributions are welcome! To contribute:
 
-Fork the repo
-
-Create a feature branch (git checkout -b feature/awesome-idea)
-
-Commit changes (git commit -m 'Add awesome idea')
-
-Push branch (git push origin feature/awesome-idea)
-
-Open a Pull Request 🎉
-
-🤝 Contributing
-
-Contributions are welcome! To contribute:
-
-Fork the repo
-
-Create a feature branch (git checkout -b feature/awesome-idea)
-
-Commit changes (git commit -m 'Add awesome idea')
-
-Push branch (git push origin feature/awesome-idea)
-
-Open a Pull Request 🎉
