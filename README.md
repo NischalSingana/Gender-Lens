@@ -39,6 +39,3 @@ npm run preview
 
 You can deploy the built `dist` directory to any static hosting provider (e.g., Netlify, Vercel, GitHub Pages).
 
-## License
-
-MIT
